@@ -1,0 +1,37 @@
+<h1 id="he1">{{aim}}</h1> 
+<!--  {{aim}}  :  for One Way Binding 
+        [Component to View binding] 1. String Interpollation -->
+
+<div class="container d-flex justify-content-center align-items-center vh-54">
+    <div class="login-container">
+        <h3 class="text-center">Bank Login Page</h3>
+        <form (ngSubmit)="login()">
+<!--  name="acno" id="acid" ,  name="psw" id="pid"   
+        In Angular there must be name attribute and id attribute-->
+            <div class="mb-3">
+                <label for="username" class="form-label" >Account No</label>
+                <input name="acno" id="acid" [(ngModel)]="acno" class="form-control"  placeholder="Enter your Acc No" type="text" autocomplete="off">
+            </div>
+
+<!--  [placeholder]="data" : for One Way Binding 
+                            [Component to View binding] 2. Property Binding  -->
+
+<!-- (change)="acnoChange($event)"  
+ -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="psw" id="pid" [(ngModel)]="psw" class="form-control" placeholder="Enter your password" autocomplete="off">
+            </div>
+
+<!--(click)="login()"  : For  One Way Binding 
+`             [ View to Component binding]  ==>  1. Event Binding  -->
+            <button type="submit"  class="btn login-btn w-100">Login</button>
+            
+            <div class="mb-3">
+                <p class="text-muted text-center mt-3" >
+                    Not a member? <a [routerLink]="['/register']">Register Now</a>
+                 </p>
+            </div>
+        </form>
+    </div>
+</div>

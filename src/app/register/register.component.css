@@ -1,0 +1,32 @@
+
+.register-container {
+   width: 50%;
+   margin: 100px ;
+   padding: 40px;
+   border: 1px solid #505050;
+   border-radius: 8px;
+   background-color: white; /* White with 50% transparency */
+    
+   
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.register-container h3{
+   font-family: cursive;
+   margin: 25px ;
+}
+
+.register-btn {
+   background-color: #ab2506;
+   color: #ffffff;
+   padding: 12px;
+   font-size: 1.1rem;
+   font-weight: 600;
+   border: none;
+   border-radius: 8px;
+   transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+   background-color: #057e03;
+   
+}

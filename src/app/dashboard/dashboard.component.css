@@ -1,0 +1,105 @@
+
+
+h1{
+   color:rgb(252, 251, 251);
+   text-align: center;
+   font-family: cursive;
+   margin-top: 70px ; 
+}
+#a1{
+   margin-top: 70px ; 
+   background: rgba(203, 200, 200, 0.3); /* White background with 30% opacity */
+   backdrop-filter: blur(8px); /* Apply a 10px blur */
+   -webkit-backdrop-filter: blur(8px); /* For better browser support */
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   height:40px;
+   width:85%;
+   border-radius:5px ;
+   padding: 7px;
+   text-align: center;
+   font-size: 18px;
+   font-family:monospace;
+   font-style: italic;
+   margin: 70px auto 0;
+
+}
+
+a {
+   text-decoration: none;
+   color: rgb(97, 250, 8); /* Change the color to white when hovered */
+ }
+.container{
+    margin-top: 4vh;
+  
+}
+
+.card {
+   border: 1px solid #505050;
+   padding: 40px;
+   padding-bottom: 10px;
+   background-color: rgb(247, 252, 252);
+    border-radius: 8px; /* Optional: rounding the corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for better visibility */
+    margin-bottom: 3vh;
+}
+.card:hover{
+   
+   transform: translateY(-3px); /* Slight move upward for a floating effect */
+}
+#c1:hover{
+   background-color: #e5e1fe;
+   
+}
+
+#c2:hover{
+   background-color: rgb(252, 227, 220);
+   
+}
+
+#hed1{
+   background: linear-gradient(to right,rgb(148, 115, 247), rgb(184, 184, 252));
+}
+#hed2{
+   background: linear-gradient(to right, rgb(250, 139, 111), #facaa6);
+}
+.card-header {
+   /*background: linear-gradient(45deg, #F1A7B9, #B9E1DB);*/
+   padding: 20px;
+   color: rgb(9, 8, 12);
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+   
+}
+.card-header p{
+   font-size: 30px;
+   font-weight: 700;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.btn {
+   width: 200px;
+   display: block;
+   margin: 10px auto; /* This will give 20px space from the top and center the button */
+   font-size: 18px;
+   font-weight: 600;
+   margin-top: 40px; /* Adds space between the input and button */
+}
+
+#d1{
+   background: linear-gradient(to right, rgb(250, 139, 111), #facaa6);
+   color: rgb(16, 16, 16);
+   
+}
+#d1:hover{
+   background: rgb(242, 81, 6);
+   color: white;
+}
+
+#d2{
+   background: linear-gradient(to right,rgb(148, 115, 247), rgb(184, 184, 252));
+
+   color: rgb(11, 11, 11);
+}
+#d2:hover{
+   background: rgb(4, 151, 14);
+   color: white;
+}

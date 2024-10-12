@@ -1,0 +1,40 @@
+
+#he1{
+   color:rgb(252, 251, 251);
+   text-align: center;
+   font-family: cursive;
+   margin-top: 70px ; 
+}
+
+.login-container {
+   border: 1px solid #2f3030;
+   border-radius: 8px;
+   background-color: white;
+   
+   width: 50%;
+   margin-top: 30px ;
+   margin-bottom: 20px ;
+   padding: 40px;
+
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.login-container h3{
+   font-family: cursive;
+   margin: 25px ;
+}
+
+.login-btn {
+   background-color: #0a4275;
+   color: #fff;
+   padding: 12px;
+   font-size: 1.1rem;
+   font-weight: 600;
+   border: none;
+   border-radius: 8px;
+   transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+   background-color: #057e03;
+   
+}

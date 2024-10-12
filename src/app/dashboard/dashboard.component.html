@@ -1,0 +1,61 @@
+<h1>
+    Welcome {{user}} !!
+</h1>
+<div id="a1">
+    <a href="" routerLink="/transaction">TRANSACTION HISTORY</a>
+</div>
+
+
+<div class="container">
+   <div class="row">
+       
+
+       <div class="col-md-6">
+           <div class="card" id="c1" >
+               <div class="card-header text-center" id="hed1">
+                   <p>DEPOSIT</p>
+               </div>
+               <div class="card-body">
+                   <form (ngSubmit)="deposit()">
+                       
+                       <div class="mb-3">
+                           <input type="text" [(ngModel)]="acno"  class="form-control" name="acno" id="acid" placeholder="enter your Account Number" required>
+                       </div>
+                       <div class="mb-3">
+                        <input type="password" [(ngModel)]="psw" class="form-control" name="psw" id="pswid" placeholder="enter the Password" required>
+                    </div>
+                       <div class="mb-3">
+                        <input type="number" [(ngModel)]="amnt" class="form-control" name="amnt" id="amntid" placeholder="enter the amount to Deposit" required>
+                    </div>
+                       <button type="submit"  id="d2" class="btn">DEPOSIT</button>
+                   </form>
+               </div>
+           </div>
+       </div>
+
+
+       <div class="col-md-6">
+        <div class="card" id="c2">
+            <div class="card-header text-center"  id="hed2">
+                <p>WITHDRAWAL</p>
+            </div>
+            <div class="card-body">
+                <form (ngSubmit)="withdraw()" >
+                                         
+                  <div class="mb-3">
+                     <input type="text"  [(ngModel)]="acno1" class="form-control" name="acno1" id="acid1" placeholder="enter your Account Number" required>
+                 </div>
+                 <div class="mb-3">
+                  <input type="password"  [(ngModel)]="psw1" class="form-control" name="psw1" id="pswid1" placeholder="enter the Password" required>
+              </div>
+                    <div class="mb-3">
+                        <input type="number"  [(ngModel)]="amnt1" class="form-control" name="amnt1" id="amntid1"  placeholder="enter the amount to Withdraw" required>
+                    </div>
+
+                    <button type="submit" id="d1"class="btn">WITHDRAW</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>

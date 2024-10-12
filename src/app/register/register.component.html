@@ -1,0 +1,32 @@
+<div class="container d-flex justify-content-center align-items-center vh-54">
+   <div class="register-container">
+       <h3 class="text-center">Bank Registration Page</h3>
+       <form (ngSubmit)="register()">
+
+           <div class="mb-3">
+               <label for="acno" class="form-label">Account No</label>
+               <input type="text" [(ngModel)]="acno" name="acno" id="acid" class="form-control"  placeholder="Enter your Acc No" autocomplete="off">
+           </div>
+
+           <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" [(ngModel)]="uname" name="uname" id="uid" class="form-control"  placeholder="Enter your Username" autocomplete="off">
+        </div>
+
+
+           <div class="mb-3">
+               <label for="password" class="form-label">Password</label>
+               <input type="password"  [(ngModel)]="psw" name="psw" id="pid"  class="form-control" placeholder="Enter your password" autocomplete="off">
+           </div>
+
+
+           <button type="submit"  class="btn register-btn w-100">Register</button>
+           
+           <div class="mb-3">
+               <p class="text-muted text-center mt-3">
+                   Already have an account? <a [routerLink]="['/login']">Log In</a>
+                </p>
+           </div>
+       </form>
+   </div>
+</div>
